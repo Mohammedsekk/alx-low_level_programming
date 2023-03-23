@@ -1,29 +1,12 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+void positive_or_negative(int i);
+int largest_number(int a, int b, int c);
+void print_remaining_days(int month, int day, int year);
+int convert_day(int month, int day);
 
-	if (n > 0)
-	{
-	printf("%d is positive\n", n);
-	}
-	else if (n < 0)
-	{
-	printf("%d is negative\n", n);
-	}
-	else
-	{
-	printf("%d is zero\n", n);
-	}
-	return (0);
-}
+
+#endif /* MAIN_H */
