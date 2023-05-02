@@ -21,6 +21,6 @@ size_t print_listint(const listint_t *h)
 		printf("%d\n", dir->n);
 		count++;
 		dir = dir->next;
-		return (count);
 	}
+	return (count);
 }
